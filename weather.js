@@ -3,11 +3,6 @@ let updateWidget = function(data) {
   console.log("Got weather data: ", data);
   // YOUR CODE GOES HERE
 
-  // Part 1 code
-  // jQuery(".card-text").text("It is " + data.main.temp.toFixed(0) + " degrees outside.")
-  // let pic = data.weather[0].icon
-  // jQuery("img").attr("src","http://openweathermap.org/img/w/" + pic + ".png")
-
   jQuery(".card-text").text("It is " + data.main.temp.toFixed(0) + " degrees outside.")
   let pic = data.weather[0].icon
   jQuery("img").attr("src","http://openweathermap.org/img/w/" + pic + ".png")
